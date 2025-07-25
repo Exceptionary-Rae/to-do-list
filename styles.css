@@ -18,6 +18,11 @@ input {
     height: 1.5rem;
     border: 1px solid darkgray;
     border-radius: 8px;
+    font-size: 1rem;
+}
+
+#add-btn {
+    margin-top: 1rem;
 }
 
 button {
@@ -68,4 +73,10 @@ li {
     line-height: 2rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+p {
+    margin: 0;
+    text-align: left;
 }
