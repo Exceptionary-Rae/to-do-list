@@ -1,82 +1,121 @@
+/* --- Basic Styles --- */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    background: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
     margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-header {
-    box-shadow: 0 0 8px black;
-    padding: 1rem;
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin: 0;
+    color: #333;
 }
 
 h1 {
-    margin: 0;
+    margin-bottom: 1.5rem;
 }
 
+h2 {
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0;
+    text-align: left;
+}
+
+
 input {
-    height: 1.5rem;
-    border: 1px solid darkgray;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#add-btn,
+#clear-btn {
+    padding: 0.75rem 1rem;;
 }
 
 #add-btn {
-    margin-top: 1rem;
+    background: green;
+}
+
+#clear-btn {
+    background: red;
 }
 
 button {
-    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
     background: black;
     color: white;
-    border: 1px solid black;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
     border-radius: 8px;
-    height: 2rem;
-    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
 }
 
 button:hover {
-    border: 1px solid white;
-    box-shadow: inset 0 0 6px white;
+    opacity: 0.85;
 }
 
-button:active {
-    background: white;
-    color: black;
-    box-shadow: inset 0 0 6px black;
+button:active,
+#add-btn:active,
+#clear-btn:active {
+    transform: scale(0.95);
+    background: #f0f2f5;
+    color: #333;
+    box-shadow: 0 0 2px black;
 }
 
-section {
-    border-bottom: 1px solid darkgray;
-    min-width: fit-content;
-    padding-bottom: 2rem;
-    margin: 2rem 10%;
-}
 
 ul {
-    width: fit-content;
-    margin: 0 auto;
     list-style: none;
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
 }
 
-li {
-    width: 100%;
-    background: #f6f6f6;
-    border-radius: 16px;
-    padding: 0.5rem 1rem;
-    box-shadow: 0px 0px 4px darkgray;
+#task-container li {
+    background: #f9f9f9;
+    border-left: 5px solid #1877f2;
+    border-radius: 8px;
+    padding: 1rem;
     line-height: 2rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 }
-
-p {
-    margin: 0;
-    text-align: left;
-}
+    
